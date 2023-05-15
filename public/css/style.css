@@ -9,3 +9,7 @@
 
     --btn-carousel-size: 48px;
 }
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
