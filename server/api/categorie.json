@@ -1,5 +1,5 @@
 [
-    {"name": "Auto", "icon": "bi bi-airplane", "announcementsCount": 123},
+    {"name": "Auto", "icon": "bi bi-airplane", "announcementsCount": 1},
     {"name": "Elettronica", "icon": "bi bi-airplane", "announcementsCount": 564},
     {"name": "Moto", "icon": "bi bi-airplane", "announcementsCount": 230},
     {"name": "Abbigliamento", "icon": "bi bi-airplane", "announcementsCount": 321},
