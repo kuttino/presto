@@ -18,6 +18,11 @@ body {
     color: var(--primary-color) !important;
 }
 
+.btn-primary {
+    border: none;
+    background-color: var(--primary-color) !important;
+}
+
 
 
 
@@ -67,3 +72,6 @@ body {
 .category-body:hover > .rounded-icon-container {
     background-color: white;
 }
+
+
+

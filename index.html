@@ -37,7 +37,7 @@
 
     
 
-    <div class="container py-5 bg-white">
+    <div class="container my-5 py-5 bg-white">
         <div class="row">
             <div class="col-12">
                 <h2 class="display-5 text-center ">Le nostre <span class="fw-bold text-primary">Categorie</span></h2>
@@ -58,6 +58,63 @@
                 </div>
             </div>
             -->
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-6 my-4">
+                <img class="d-block w-100" src="https://picsum.photos/id/237/640" alt="">
+            </div>
+            <div class="col-12 col-lg-6 my-4">
+
+                <h3 class="display-5 text-center">Lavora <span class="fw-bold text-primary">con noi</span></h3>
+                <p class="text-center lead">Invia la tua candidatura per far parte del team di Presto</p>
+
+                <form id="workWithUsForm" class="my-4 needs-validation" novalidate>
+
+                    <div class="my-4 form-floating">
+                      <input type="text" class="form-control" id="fullnameInput" placeholder="Nome e Cognome" required>
+                      <label for="fullnameInput">Nome e Cognome</label>
+
+                      <div class="valid-feedback">
+                        Grazie
+                      </div>
+                      <div class="invalid-feedback">
+                        Devi inserire un nome e cognome valido
+                      </div>
+                    </div>
+
+                    <div class="my-4 form-floating">
+                      <input type="email" class="form-control" id="emailInput" placeholder="Email" required>
+                      <label for="emailInput">Email</label>
+
+                      <div class="valid-feedback">
+                        Grazie
+                      </div>
+                      <div class="invalid-feedback">
+                        Devi inserire una email valida
+                      </div>
+                    </div>
+
+                    <div class="my-4 form-floating">
+                      <textarea type="text" class="form-control" id="descriptionInput" placeholder="Descrivi te stesso" required></textarea>
+                      <label for="descriptionInput">Descrivi te stesso</label>
+
+                      <div class="valid-feedback">
+                        Grazie
+                      </div>
+                      <div class="invalid-feedback">
+                        E scrivile due righe...
+                      </div>
+                    </div>
+
+
+                    <div class="col-12 d-flex justify-content-center">
+                      <button class="btn btn-primary" type="submit">Invia la tua candidatura</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 

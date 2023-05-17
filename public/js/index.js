@@ -37,21 +37,6 @@ function generateCardCategory(category) {
 }
 
 
-
-/*
- <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-    <div class="category-card">
-        <div class="category-body">
-            <div class="rounded-icon-container">
-                <i class="bi bi-airplane"></i>
-            </div>
-            <h3>Auto</h3>
-            <p>123 Annunci</p>
-        </div>
-    </div>
-</div>
-*/
-
 fetch("../../server/api/categorie.json")
     .then((response) => {
         return response.json();
@@ -72,4 +57,18 @@ fetch("../../server/api/categorie.json")
     })
     .catch((error) => {
         console.error(error);
-    })
+    });
+
+
+const workWithUsForm = document.getElementById('workWithUsForm');
+workWithUsForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    if(!workWithUsForm.checkValidity()) {
+        console.error("validazione non a buon fine");
+    }
+
+    workWithUsForm.classList.add('was-validated');
+});
+
+
