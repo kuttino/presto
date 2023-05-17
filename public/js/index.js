@@ -69,6 +69,9 @@ workWithUsForm.addEventListener('submit', (event) => {
     }
 
     workWithUsForm.classList.add('was-validated');
+
+    // invio i dati al server
+    // TODO
 });
 
 
