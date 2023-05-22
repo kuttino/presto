@@ -374,5 +374,13 @@
         "price": "2.99",
         "type": "sell",
         "createdAt": 1676334144248
+    },
+    {
+        "id": 50,
+        "name": "Autoradio Fiat",
+        "category": "Elettronica",
+        "price": "50.99",
+        "type": "search",
+        "createdAt": 1676334144248
     }
 ]

@@ -40,7 +40,7 @@
 
     <main>
         <section class="container my-5 bg-primary p-4 pb-0 rounded-4">
-            <form>
+            <form id="filteringForm">
                 <div class="row">
                     <div class="col-12 col-md-6 mb-4">
                         <div class="form-floating">
@@ -77,18 +77,19 @@
                         <div class="form-floating">
                             <select id="sortSelect" class="form-select" >
                                 <option value="" selected>Nessun ordine</option>
-                                <option value="">Dal più recente</option>
-                                <option value="">Dal più vecchio</option>
-                                <option value="">Dal meno costoso</option>
-                                <option value="">Dal più costoso</option>
-                                <option value="">Dalla A alla Z</option>
-                                <option value="">Dalla Z alla A</option>
+                                <option value="descByDate">Dal più recente</option>
+                                <option value="ascByDate">Dal più vecchio</option>
+                                <option value="ascByPrice">Dal meno costoso</option>
+                                <option value="descByPrice">Dal più costoso</option>
+                                <option value="ascByAlpha">Dalla A alla Z</option>
+                                <option value="descByAlpha">Dalla Z alla A</option>
                             </select>
                             
                             <label for="sortSelect">Ordina Annunci</label>
                         </div>
                     </div>
                     <div class="col-12 col-md-3 mb-4">
+                        <!-- <input class="btn bg-accent d-block text-white w-100 h-100" type="submit" value="Cerca" /> -->
                         <button class="btn bg-accent d-block text-white w-100 h-100" type="submit">Cerca</button>
                     </div>
                 </div>
