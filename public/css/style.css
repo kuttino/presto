@@ -45,6 +45,18 @@ body {
 
 
 
+.navbar-toggler {
+    border: none;
+    padding: 0;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-toggler > .navbar-toggler-icon {
+    width: 24px;
+    height: 24px;
+}
+
 
 .category-card {
     border-radius: 12px;

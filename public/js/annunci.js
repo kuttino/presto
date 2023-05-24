@@ -1,4 +1,3 @@
-
 function createAnnouncementCard(announcement) {
 
     const date = new Date(announcement.createdAt);
@@ -51,7 +50,22 @@ async function populateAnnouncements(announcements) {
     });
 }
 
+function populateCategorySelect(announcements, categorySelect) {
 
+    const categorySet = new Set();
+    announcements.forEach((announcement) => {
+        categorySet.add(announcement.category);
+    });
+
+    // <option value="Elettronica">Elettronica</option>
+    categorySet.forEach((category) => {
+        const categoryOption = document.createElement('option');
+        categoryOption.setAttribute('value', category);
+        categoryOption.textContent = category;
+
+        categorySelect.appendChild(categoryOption);
+    });
+}
 
 
 async function readAllAnnouncements() {
@@ -139,12 +153,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     filteringForm.addEventListener('submit', async (event) => {
         event.preventDefault();
 
-        /*
-        const searchInputValue = searchInput.value;
-        const categorySelectValue = categorySelect.value;
-        const minPriceInputValue = minPriceInput.value;
-        const maxPriceInputValue = maxPriceInput.value;
-        */
+        //const searchInputValue = searchInput.value;
+        //const categorySelectValue = categorySelect.value;
+        //const minPriceInputValue = minPriceInput.value;
+        //const maxPriceInputValue = maxPriceInput.value;
 
         const announcements = await readAllAnnouncements();
 
@@ -171,8 +183,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 
     const announcements = await readAllAnnouncements();
+    populateCategorySelect(announcements, categorySelect);
     await populateAnnouncements(announcements);
 });
-
-
 
